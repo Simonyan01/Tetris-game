@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="game-board"></canvas>
+    <script type="importmap">
+      {
+        "imports": {
+          "main": "./src/main.js",
+          "game": "./src/Game.js",
+          "board": "./src/Board.js",
+          "tetromino": "./src/Tetromino.js",
+          "utils": "./src/utils.js"
+        }
+      }
+    </script>
+    <div id="game-over" class="hidden">Game Over!</div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
